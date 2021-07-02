@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Howdy!</title>
+	<style type="text/css">
+		/* make HTML5 layout elements block elements for older browsers */
+		header, nav, aside, article, footer, section {
+			display: block;
+		}
+		/* style for <a> tags in the nav section */
+		nav a {
+			background: url(pix2/navback.png) center repeat-x,
+			url(pix2/navhover.png) center repeat-x;
+			color: white;
+			text-decoration: none;
+			outline:none;
+			padding: 10px 0;
+			display: block;
+			float: left;
+			border-right: solid 1px silver;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+			width: 20%;
+			text-align: center;
+			box-sizing: border-box;
+			/* Box sizing for older browsers */
+   			-moz-box-sizing: border-box;
+   			-webkit-box-sizing: border-box;
+		}
+		nav a:link, nav a:visited{
+			background: url(pix2/navback.png);
+			color:white;
+		}
+		nav a:hover, nav a:active, nav a.currentpage {
+			background: url(pix2/navhover.png);
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		//Make older browsers aware of new HTML5 layout tags
+		'header nav aside article footer section'.replace(/\w+/g, function (n) {document.createElement(n)})
+	</script>
+
+	<!-- Navigation bar -->
+	<nav>
+		<a href="thumbzoom.htm">Home</a>
+		<a href="#">Products</a>
+		<a href="#">Services</a>
+		<a href="#">About</a>
+		<a href="#">Contact Me</a>
+	</nav>
+</body>
+</html>

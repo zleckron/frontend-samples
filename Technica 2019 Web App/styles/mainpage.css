@@ -1,0 +1,45 @@
+h1 {
+  font-size: 40px;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h3 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 18px;
+}
+p {
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url("ales-krivec-unsplash.jpg");
+  background-image: linear-gradient(to top, rgba(100, 100, 100, 0.0), rgba(100, 100, 100, 0.73)), url("ales-krivec-unsplash.jpg");
+  background-size: 100%;
+}
+
+select {
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+input[type=submit] {
+  background-color: white;
+  font-size: 35px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+input[type=number] {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: black;
+}

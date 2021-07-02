@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- to test, open new tab in browser > file > select this file-->
+<!-- on chrome, right click > inspect for developer options -->
+<!-- editing in inspect will only save until you refresh -->
+<html>
+<meta charset="UTF-8">
+ <head>
+   <!-- shows up in tab header -->
+   <title>Beans And Such</title>
+ </head>
+ <!--style="background-color:lavender;"-->
+ <body>
+   <!-- <br> adds a new line -->
+   <h1 id = "logo_anchor" style = "font-family:trebuchetMS;">
+     <center>A Fake Coffee Shop</center>
+   </h1>
+   <p>
+   </p>
+
+   <h3 id = "photography_anchor" style = "font-family:trebuchetMS">
+     <!-- alt displays alternative text if the photo can't be displayed or viewed (this makes your website more accessible) -->
+     <center><img src="pics/Beans-and-Such-logo.png" alt = "logo" width = "240"></center>
+     <center>We serve coffee at room temperature</center>
+   </h1>
+   <!-- p makes a new paragraph -->
+   <p>Like our website?<br> <!-- <br> is a special tag! it creates a line break -->
+     <!-- Change this to be whatever you want! -->
+     Check out the gitHub with resouces used to make this website:
+       <br>
+       <!-- the a tag creates an anchor (a link). target = "_blank" opens the link in a new tag -->
+       <a href=https://github.com/zleckron/cseduclub/ target = "_blank">
+           CS Edu GitHub Website</a>
+   </p>
+   <p>Pictures from Unsplash</p>
+   <figure>
+     <!-- images need to be in the same folder as the HTML for this to work! -->
+     <!-- or you need to specify the file path (series of folders seperated with / specifying the location of the image) -->
+     <img src="rizky-subagja-748216-unsplash.jpg" alt = "Photo by Rizky Subagja on Unsplash" width = "300">
+     <figcaption>Our coffee is poured with skill</figcaption>
+   </figure>
+   <br>
+   <figure>
+     <!-- using Bulma we can specify the image size by percent -->
+     <img src="nafinia-putra-59655-unsplash.jpg" alt = "Photo by Nafinia Putra on Unsplash" width = "600">
+     <figcaption>It is so pretty inside the coffee shop</figcaption>
+
+ </body>
+
+ <footer>
+   <!-- put contact info here -->
+   <p><center>Contact us at email@domain.com</center></p>
+ </footer>
+</html>

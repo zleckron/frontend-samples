@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Thumbnails Zoom</title>
+ <style>
+	 table.zoom {
+		 width: 450px;
+		 margin: 100px auto;
+	 }
+	 table.zoom td {
+	 	width: 33%;
+	 }
+	 table.zoom img {
+	 	width: 100%;
+	 }
+	 /* Enlarge image on hover */
+	 table.zoom img:hover {
+	 	transform: scale(2.5);
+	 }
+	 /* Enlarge image on hover */
+	 table.zoom img.spinaround:hover {
+		 transform: scale(2.5) rotate(720deg);
+		 transition: all ease-out 1s;
+	 }
+	 table.zoom img.spinside:hover {
+		 transform: scale(2.5) rotatey(720deg);
+		 transition: all ease-out 1s;
+	 }
+	 table.zoom img.spintop:hover {
+		 transform: scale(2.5) rotatex(720deg);
+		 transition: all ease-out 1s;
+	 }
+	 table.zoom img.spincrazy:hover {
+		 transform: scale(2.5) rotate(720deg) rotatex(360deg) rotatey(360deg);
+		 transition: all ease-out 1s;
+	 }
+ </style>
+</head>
+<body>
+ <table class="zoom">
+	 <tr>
+		 <td>
+		 	<img src="pix2/flower01.png" alt="flower" class="spinaround">
+		 </td>
+		 <td>
+		 	<img src="pix2/flower02.png" alt="flower">
+		 </td>
+		 <td>
+		 	<img src="pix2/flower03.png" alt="flower">
+		 </td>
+	 </tr>
+	 <tr>
+		 <td>
+		 	<img src="pix2/flower04.png" alt="flower" class="spintop">
+		 </td>
+		 <td>
+			<img src="pix2/flower05.png" alt="flower" class="spincrazy">
+		 </td>
+		 <td>
+			 <img src="pix2/flower06.png" alt="flower">
+		 </td>
+	 </tr>
+	 <tr>
+		 <td>
+		 	<img src="pix2/flower07.png" alt="flower" class="spinside">
+		 </td>
+		 <td>
+		 	<img src="pix2/flower08.png" alt="flower">
+		 </td>
+		 <td>
+		 	<img src="pix2/flower09.png" alt="flower">
+		 </td>
+	 </tr>
+ </table>
+</body>
+</html>

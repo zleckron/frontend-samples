@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LetsGitThisBread</title>
+    	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+  </head>
+  <body>
+    <form name="ingredients" action="/recipe" method="post">
+        <h2>Recipes in your budget:</h2>
+        {% for ing in recipes %}
+          {% for thing in ing %}
+            <h3><option value="{{ thing }}">{{ thing }}</option><h3>
+          {% endfor %}
+          <hr>
+        {% endfor %}
+  </body>
+</html>

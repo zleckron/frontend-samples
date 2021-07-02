@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LetsGitThisBread</title>
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+
+
+  <!-- Photo by Ales Krivec on Unsplash -->
+</head>
+<body>
+<center>
+<h1>Let's Git This Bread</h1>
+<h3>Cooking on a budget!</h3>
+<br>
+<h4>Select the ingredients that you alrady have and want to cook with!<br>
+Then, enter the maximum amount you want to spend on additional ingredients.
+<br><br>
+Let's Git This Bread will recommend recipes that you can afford!</h4>
+
+
+<form name="ingredients" action="/recipe" method="post">
+    <p>First Ingredient:</p>
+    <select name="ing1">
+    {% for ing in ingredients_list %}
+    <option value="{{ ing }}">{{ ing }}</option>
+    {% endfor %}
+  </select>
+
+
+    <p>Second Ingredient:</p>
+    <select name="ing2">
+    {% for ing in ingredients_list %}
+    <option value="{{ ing }}">{{ ing }}</option>
+    {% endfor %}
+  </select>
+
+    <p>Third Ingredient:</p>
+    <select name="ing3">
+    {% for ing in ingredients_list %}
+    <option value="{{ ing }}">{{ ing }}</option>
+    {% endfor %}
+  </select>
+
+    <p>Max spending amount</p>
+    <input name="max" type="number" value="15.00" min="0">
+
+
+<br><br><br><br><br>
+<input type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>
